@@ -7,5 +7,8 @@
   justify-content: space-between;
   padding: 200 rpx 0;
   box-sizing: border-box;
-  color: red;
+}
+.content-block{
+  margin: 20px 0;
+  padding: 0 15px;
 }

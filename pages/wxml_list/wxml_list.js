@@ -8,7 +8,12 @@ Page({
       {id: 1, unique: 'unique_1'},
       {id: 0, unique: 'unique_0'},
     ],
-    numberArray: [1, 2, 3, 4]
+    numberArray: [1, 2, 3, 4],
+    template_item: {
+      index: 0,
+      msg: 'this is a template',
+      time: '2016-09-15'
+    }
   },
   switch: function(e) {
     const length = this.data.objectArray.length

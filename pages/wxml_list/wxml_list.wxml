@@ -4,3 +4,26 @@
 
 <switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;"> {{item}} </switch>
 <button bindtap="addNumberToFront"> Add to the front </button>
+
+
+<template name="msgItem">
+  <view class="content-block template-list">
+    <text> {{index}}: {{msg}} </text>
+    <view> Time: {{time}} </view>
+  </view>
+</template>
+
+<template is="msgItem" data="{{...template_item}}"/>
+
+<template name="odd">
+  <view> odd </view>
+</template>
+<template name="even">
+  <view> even </view>
+</template>
+
+<view class="content-block">
+  <block wx:for="{{[1, 2, 3, 4, 5]}}">
+      <template is="{{item % 2 == 0 ? 'even' : 'odd'}}"/>
+  </block>
+</view>
